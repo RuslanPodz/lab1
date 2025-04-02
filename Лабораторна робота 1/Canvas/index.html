@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кінематика прямолінійного руху</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Моделювання кінематики прямолінійного руху</h1>
+    <div class="controls">
+        <label>x₀: <input type="number" id="x0" value="10"></label>
+        <label>y₀: <input type="number" id="y0" value="5"></label>
+        <label>Кут (градуси): <input type="number" id="angle" value="45"></label>
+        <label>Початкова швидкість: <input type="number" id="velocity" value="10"></label>
+        <label>Прискорення: <input type="number" id="acceleration" value="1"></label>
+        <label>Колір траєкторії: <input type="color" id="color" value="#ff0000"></label>
+        <button onclick="startSimulation()">Почати</button>
+        <button onclick="clearCanvas()">Очистити</button>
+    </div>
+    <canvas id="canvas" width="800" height="400"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

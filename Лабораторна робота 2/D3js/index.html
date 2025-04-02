@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кінематика прямолінійного руху</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h1>Моделювання кінематики прямолінійного руху</h1>
+    <div class="controls">
+        <label>x₀: <input type="number" id="x0" value="0"></label>
+        <label>y₀: <input type="number" id="y0" value="0"></label>
+        <label>Кут (градуси): <input type="number" id="angle" value="45"></label>
+        <label>Початкова швидкість (м/с): <input type="number" id="velocity" value="10"></label>
+        <label>Прискорення: <input type="number" id="acceleration" value="0"></label>
+        <label>Колір траєкторії: <input type="color" id="color" value="#ff0000"></label>
+        <button onclick="startSimulation()">Почати</button>
+        <button onclick="clearSVG()">Очистити</button>
+    </div>
+    <div>
+        <label>Час польоту: </label><span id="time">0</span> сек
+    </div>
+    <div>
+        <label>Відстань: </label><span id="distance">0</span> м
+    </div>
+    <div>
+        <label>Максимальна висота: </label><span id="height">0</span> м
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
